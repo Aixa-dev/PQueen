@@ -1,0 +1,446 @@
+/* General */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f9; /* Fondo general */
+}
+
+header {
+    background: #f861d2; /* Color elegante */
+    color: #fff;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f10fc09a; /* Color dorado suave al pasar el mouse */
+}
+
+/* Main Section */
+main {
+    padding: 40px 20px;
+}
+
+/* Servicios Section */
+.servicios {
+    background-color: #f7e1f7; /* Fondo rosa tenue */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.servicios h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #e772d0;
+    margin-bottom: 30px;
+}
+
+.lista-servicios {
+    display: flex;
+    flex-direction: column; /* Los servicios se muestran en columna */
+    gap: 30px;
+}
+
+/* Cada servicio */
+.servicio {
+    display: flex;
+    flex-direction: column; /* Los elementos dentro del servicio se ordenan verticalmente */
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Limitar el ancho para que se vean más uniformes */
+    margin: 0 auto; /* Centrado */
+}
+
+.nombre-servicio {
+    width: 100%;
+    text-align: center;
+}
+
+.nombre-servicio h3 {
+    font-size: 2.2em;
+    color: #e093c8; /* Rosa vibrante */
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.nombre-servicio h3:hover {
+    color: #f167ce; /* Color vibrante al pasar el cursor */
+}
+
+.descripcion-servicio {
+    width: 100%;
+    text-align: center;
+}
+
+.descripcion-servicio p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.imagen-servicio {
+    width: 100%;
+    text-align: center;
+}
+
+.foto-servicio {
+    width: 80%; /* Reducir tamaño de la imagen para mayor estética */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ea6cd5;
+    color: #fff;
+    font-size: 1.1em;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilos adicionales para las imágenes */
+.imagenes-lado-derecho {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 30%;
+    margin-left: auto;
+    padding: 20px;
+}
+
+.imagenes-lado-derecho .imagen img {
+    width: 100%;
+    max-width: 250px;  /* Ajusta el tamaño de la imagen */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgb(180, 60, 146);
+}
+
+.imagenes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+}
+
+.imagenes input[type="file"] {
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #f4cfec;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #e093c8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+button:hover {
+    background-color: #f167f1;
+}
+
+
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe6f2; /* Fondo rosado claro */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center; /* Centrar el contenido */
+}
+
+/* Encabezado del formulario */
+form {
+    background
+
+
+
+/* Estilos para la página Acerca de */
+.acerca {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+}
+
+.acerca h2 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #e093c8;
+    margin-bottom: 40px;
+}
+
+.contenido-acerca {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.informacion-dueña {
+    width: 45%;
+    background-color: #f4cfec;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.informacion-dueña h3 {
+    color: #e093c8;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.informacion-dueña p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.informacion-dueña a {
+    color: #e093c8;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.informacion-dueña a:hover {
+    color: #f167f1;
+}
+
+.fotos-dueña {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.foto {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.foto img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe6f2; /* Fondo rosado claro */
+    margin: 0;
+    padding: 0;
+    color: #b25c8b;
+    text-align: center; /* Centrar todo el contenido horizontalmente */
+}
+
+/* Encabezado */
+header {
+    background-color: #ff99cc; /* Rosado fuerte */
+    color: #fff;
+    padding: 20px 0;
+    border-bottom: 2px solid #ff66a3; /* Detalle más oscuro */
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center; /* Centrar elementos en el menú */
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffccdd; /* Rosado más claro */
+}
+
+/* Formulario */
+form {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #ff99cc; /* Borde rosado */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Alinear contenido del formulario a la izquierda */
+}
+
+form label {
+    font-weight: bold;
+    color: #ff66a3;
+}
+
+form input[type="email"],
+form input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ff99cc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff99cc; /* Botón rosado */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #ff66a3; /* Color más oscuro al pasar */
+}
+
+/* Enlace para registro */
+p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+p a button {
+    background-color: #ff99cc; /* Fondo rosado */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+p a button:hover {
+    background-color: #ff66a3; /* Rosado oscuro al pasar el ratón */
+}
+
+/* Footer (si se incluye) */
+footer {
+    background-color: #ff66a3;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Encabezado del formulario */
+form {
+    background
+
+
+
+/* Estilos para la página Acerca de */
+.acerca {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+}
+
+.acerca h2 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #e093c8;
+    margin-bottom: 40px;
+}
+
+.contenido-acerca {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.informacion-dueña {
+    width: 45%;
+    background-color: #f4cfec;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.informacion-dueña h3 {
+    color: #e093c8;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.informacion-dueña p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+
+}

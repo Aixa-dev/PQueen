@@ -1,0 +1,29 @@
+<?php
+include 'conexion.php';
+
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+
+    $sql = "SELECT * FROM citas WHERE id = $id";
+    $result = mysqli_query($conexion, $sql);
+    $cita = mysqli_fetch_assoc($result);
+
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $nueva_fecha_hora = $_POST['fecha_hora'];
+
+        $sql_update = "UPDATE citas SET fecha_hora = '$nueva_fecha_hora' WHERE id = $id";
+        
+        if (mysqli_query($conexion, $sql_update)) {
+            echo "Cita reagendada con éxito!";
+        } else {
+            echo "Error: " . mysqli_error($conexion);
+        }
+    }
+}
+?>
+
+<form action="reagendar.php?id=<?php echo $id; ?>" method="POST">
+    <label for="fecha_hora">Nueva Fecha y Hora:</label>
+    <input type="datetime-local" name="fecha_hora" id="fecha_hora" value="<?php echo $cita['fecha_hora']; ?>" required>
+    <button type="submit">Reagendar</button>
+</form>
