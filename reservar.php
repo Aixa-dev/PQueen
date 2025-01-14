@@ -170,29 +170,26 @@ table tbody td button:hover {
 <body>
     
 
-    <form action="agendar_cita.php" method="POST">
-        <label for="nombre_cliente">Nombre del Cliente:</label>
-        <input type="text" name="nombre_cliente" id="nombre_cliente" required><br>
+<form action="agendar_cita.php" method="POST">
+    <label for="nombre_cliente">Nombre del Cliente:</label>
+    <input type="text" name="nombre_cliente" id="nombre_cliente" required><br>
 
-        <div>
-        <label for="servicios">Selecciona los Servicios:</label><br>
-        <select  name="servicio" id="servicio" >
-            
-            <option   value="Manicure"> Manicure</option>
-            <option type="checkbox" name="pesta" value="Extensiones de Pestañas"> Extensiones de Pestañas<br>
-            <option type="checkbox" name="tratamientoc" value="Tratamiento para el Cabello"> Tratamiento para el Cabello<br>
-        </select>
-        </div>
-        
-        
+    <label for="servicio">Selecciona el Servicio:</label><br>
+    <select name="servicio" id="servicio" required>
+        <option value="Manicure">Manicure</option>
+        <option value="Extensiones de Pestañas">Extensiones de Pestañas</option>
+        <option value="Tratamiento para el Cabello">Tratamiento para el Cabello</option>
+    </select><br><br>
 
-        <label for="fecha_hora">Fecha y Hora:</label>
-        <input type="date" name="fecha" id="fecha" required>
-        <label for="hora"> Hora: </label>
-        <input type="time" name="hora" id="hora" required>
+    <label for="fecha">Fecha:</label>
+    <input type="date" name="fecha" id="fecha" required><br>
 
-        <button type="submit">Agendar Cita</button>
-    </form>
+    <label for="hora">Hora:</label>
+    <input type="time" name="hora" id="hora" required><br><br>
+
+    <button type="submit">Agendar Cita</button>
+</form>
+
     
 
     <h2>Citas Agendadas</h2>
@@ -208,6 +205,13 @@ table tbody td button:hover {
             while($row = mysqli_fetch_assoc($result)) {
                 
             }
+            // Mostrar mensajes de éxito o error si existen
+if (isset($_GET['success'])) {
+    echo "<p style='color: green;'>{$_GET['success']}</p>";
+}
+if (isset($_GET['error'])) {
+    echo "<p style='color: red;'>{$_GET['error']}</p>";
+}
             ?>
             
         </tbody>

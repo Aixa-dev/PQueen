@@ -107,7 +107,7 @@ header nav ul li a:hover {
 
 /* Formulario */
 form {
-    background-color: white;
+    background-color: Light pink;
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;

@@ -395,52 +395,7 @@ footer {
     width: 100%;
 }
 
-/* Encabezado del formulario */
-form {
-    background
 
-
-
-/* Estilos para la página Acerca de */
-.acerca {
-    background-color: #f9f9f9;
-    padding: 40px 20px;
-}
-
-.acerca h2 {
-    font-size: 2.5em;
-    text-align: center;
-    color: #e093c8;
-    margin-bottom: 40px;
-}
-
-.contenido-acerca {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.informacion-dueña {
-    width: 45%;
-    background-color: #f4cfec;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-.informacion-dueña h3 {
-    color: #e093c8;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.informacion-dueña p {
-    font-size: 1.2em;
-    color: #333;
-}
 
 
 }

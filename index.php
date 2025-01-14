@@ -156,7 +156,7 @@ footer {
             </div>
             <div class="fotos-container">
             <img src="img/imagenes/foto1.jpeg" alt="Foto 1" class="foto">
-            <img src="img/imagenes/foto5.jpeg" alt="Foto 5" class="foto">
+            
             </div>
 
         </section>
